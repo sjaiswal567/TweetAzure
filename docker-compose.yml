@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tweetapp.api:
+    image: ${DOCKER_REGISTRY-}tweetappapi
+    build:
+      context: .
+      dockerfile: Backend/TweetApp.Api/Dockerfile
